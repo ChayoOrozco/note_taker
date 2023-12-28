@@ -12,7 +12,7 @@ def add_note(notes):
     print("Guardado.")
 
 def save_notes_to_file(notes):
-    timestamp = datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
+    timestamp = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
     filename = f"notes_{timestamp}.txt"
     filepath = os.path.join(os.getcwd(), filename)
     with open(filepath, "w") as file:
