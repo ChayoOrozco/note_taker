@@ -22,7 +22,7 @@ def main():
     notes = []
     while True:
         show_menu()
-        option = input("Choose an option: ")
+        option = input("Escribe tu eleccion: ")
         if option == "1":
             add_note(notes)
         elif option == "3":
