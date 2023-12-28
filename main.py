@@ -27,9 +27,9 @@ def main():
         option = input("Escribe tu eleccion: ")
         if option == "1":
             add_note(notes)
-        elif option == "3":
+        elif option == "2":
             save_notes_to_file(notes)
-        elif option == "4":
+        elif option == "3":
             print("Exiting program.")
             break
         else:
