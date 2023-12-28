@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 def show_menu():
@@ -13,10 +14,11 @@ def add_note(notes):
 def save_notes_to_file(notes):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"notes_{timestamp}.txt"
-    with open(filename, "w") as file:
+    filepath = os.path.join(os.getcwd(), filename)
+    with open(filepath, "w") as file:
         for note in notes:
             file.write(note + "\n")
-    print(f"Notes saved to {filename}")
+    print(f"Notes saved to {filepath}")
 
 def main():
     notes = []
