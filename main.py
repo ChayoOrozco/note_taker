@@ -19,6 +19,7 @@ def save_notes_to_file(notes):
         for note in notes:
             file.write(note + "\n")
     print(f"Notes saved to {filepath}")
+    notes.clear()
 
 def main():
     notes = []
